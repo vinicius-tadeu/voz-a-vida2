@@ -1,0 +1,57 @@
+.sectionWWA
+    background: url('/Bg-WhoWeAre.svg') no-repeat
+    background-size: cover
+    height: 120rem
+    width: 100%
+    margin-top:-3px
+    padding-top:2rem
+    position: relative
+.wwaTitle
+    display: flex
+    text-align: center
+    align-items: center
+    justify-content: center
+    font-size: 5rem
+    color: #fff
+
+.wrapperFigure
+    display: flex
+    width: 70rem
+    height: 300px
+    justify-content: space-around
+    align-items: center
+    z-index: 3
+    >div
+        color: #fff
+        background-color: #00112ed3
+        border-radius: 10px
+        padding: 20px
+    >div>p
+        width: 400px
+        color: #fff
+        text-align: justify
+        line-height: 25px
+.wrapperFigures
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 50px
+    
+.wrapperFigure:nth-child(2n)
+    flex-direction: row-reverse
+
+.firesWWA,.bigFires
+    position: absolute
+.firesWWA
+    right: 0
+    top:17%
+    pointer-events: none
+.firesWWA.second
+    left: 0
+    top:20%
+    transform: rotateY(180deg)
+
+.bigFires
+    bottom: -25%
+    right: 0
+    pointer-events: none

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap')
+
+.headerHome 
+    position: fixed
+    width: 100%
+    top:0
+    background-color: #004870
+    color: #fff
+    display: flex
+    justify-content: center
+    height: 4rem
+    align-items: center
+    font-family: 'KoHo', sans-serif
+    font-weight: 600
+    z-index:10
+.navHome,
+.ulNav
+    display: flex
+    width: 90%
+    justify-content: space-around
+    list-style: none
+    >li 
+        cursor: pointer
+        >a
+            color: #fff
+            text-decoration: none
+.headerHomeR
+    display: flex
+    pointer-events: none
+    position: fixed
+    flex-direction: column
+    transition: all .4s
+    height: 0px
+    width: 0px
+    z-index: 6
+    background-color: #003156
+    opacity: 0
+    left: 20px
+    top: 9.9%
+    overflow: hidden
+    ul
+        left: 5px
+        display: flex
+        flex-direction: column
+        gap: 15px
+        padding-top: 5px
+    &.active
+        height: 316px
+        width: 100px
+
+.headerBurger
+    display: flex
+    opacity: 0
+    pointer-events: none
+    border-radius: 10px
+    border-bottom-left-radius: 0
+    width: 50px
+    height: 50px
+    margin: 20px
+    background-color: #003156
+    position: fixed
+    z-index: 7
+    text-align: center
+    padding-top: 4px
+    border: none
+    >img
+        pointer-events: none
+        margin: 0 auto
+    ul
+        border-radius: 10px
+        background-color: #003156
+        width: 80px
+        gap: 20px
+        flex-direction: column
+        li
+            padding: 2px
