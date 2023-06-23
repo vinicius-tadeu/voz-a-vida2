@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   function toggleMenu() {
     if (classe == "headerHomeR") {
       setClasse(classe + " active");
-    } else{
+    } else {
       setClasse("headerHomeR");
     }
   }
@@ -27,7 +27,9 @@ const Header: React.FC = () => {
             <li>
               <a href="#BeADonor">Seja um doador</a>
             </li>
-            <li>Projetos</li>
+            <li>
+              <a href="https://projetos.institutovozavida.com.br">Projetos</a>
+            </li>
             <li>
               <a href="#Supporters">Apoiadores</a>
             </li>
@@ -44,25 +46,37 @@ const Header: React.FC = () => {
         <nav className="navHome">
           <ul className="ulNav">
             <li>
-              <a href="#Home" onMouseDown={toggleMenu}>Home</a>
+              <a href="#Home" onMouseDown={toggleMenu}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#WhoWeAre" onMouseDown={toggleMenu}>Quem Somos</a>
+              <a href="#WhoWeAre" onMouseDown={toggleMenu}>
+                Quem Somos
+              </a>
             </li>
             <li>
-              <a href="#History" onMouseDown={toggleMenu}>História</a>
+              <a href="#History" onMouseDown={toggleMenu}>
+                História
+              </a>
             </li>
             <li>
-              <a href="#BeADonor" onMouseDown={toggleMenu}>Seja um doador</a>
+              <a href="#BeADonor" onMouseDown={toggleMenu}>
+                Seja um doador
+              </a>
             </li>
             <li>
               <a onMouseDown={toggleMenu}>Projetos</a>
             </li>
             <li>
-              <a href="#Supporters" onMouseDown={toggleMenu}>Apoiadores</a>
+              <a href="#Supporters" onMouseDown={toggleMenu}>
+                Apoiadores
+              </a>
             </li>
             <li>
-              <a href="#ContactUs" onMouseDown={toggleMenu}>Fale Conosco</a>
+              <a href="#ContactUs" onMouseDown={toggleMenu}>
+                Fale Conosco
+              </a>
             </li>
           </ul>
         </nav>
